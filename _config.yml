@@ -1,0 +1,22 @@
+# 用 Jekyll 自动渲染所有 Markdown 文件
+# 1. 网站基础配置（非核心，但提升兼容性/可读性）
+title: Privacy Policy Site  # 网站标题（浏览器标签页/SEO显示，可改成你的应用名，比如"MyApp Privacy Policy"）
+description: Web Site for Mini Games Collection  # 网站描述（SEO用，可改成你的应用隐私协议描述）
+language: en-US  # 页面语言（你的隐私协议是英文，指定en-US让浏览器/搜索引擎识别，避免排版乱码）
+
+# 2. Markdown渲染核心配置（决定md文件能否正确渲染成带超链接的网页）
+markdown: kramdown  # 指定GitHub Pages默认的Markdown渲染引擎（必须配，否则md可能渲染失败）
+kramdown:  # kramdown引擎的细化配置（针对你的隐私协议场景优化）
+  input: GFM  # 支持GitHub Flavored Markdown（GitHub专属的md语法，比如你的超链接、列表都属于GFM）
+  hard_wrap: false  # 关闭「自动硬换行」，避免你的长文本被无端截断（适配英文长段落）
+  syntax_highlighter_opts:
+    disable: true  # 关闭代码高亮（你的隐私协议没有代码块，关闭后排版更整洁）
+
+# 3. 主题&插件配置（保证排版整洁，避免无主题导致的样式错乱）
+theme: minima  # 指定GitHub Pages默认的极简主题（minima是GitHub官方维护的，适配性最好，能让文字、超链接、列表排版规整）
+plugins:  # 加载必要插件（避免渲染异常）
+  - jekyll-feed  # 兼容RSS订阅（无实际影响，但缺了可能触发GitHub Pages构建警告）
+  - jekyll-seo-tag  # 优化SEO（让页面在浏览器/搜索引擎中显示更规范）
+
+# 4. 路径配置（核心：决定md文件的访问方式）
+permalink: /:title  # 访问规则：md文件名（无后缀）即可访问，比如privacy.md → https://liangy0101.github.io/privacy
