@@ -1,6 +1,13 @@
+<!--
+ * @Author: zhanghl
+ * @Date: 2026-01-27 23:11:21
+ * @LastEditors: zhanghl
+ * @LastEditTime: 2026-01-28 09:49:30
+ * @Description: 
+-->
 **Privacy Policy**
 
-This privacy policy is applicable to the 2048Plus app (hereinafter referred to as "Application") for mobile devices, which was developed by Liang's Wonderland (hereinafter referred to as "Service Provider") as a an Ad Supported service. This service is provided "AS IS".
+This privacy policy is applicable to the "Mini Game Collection" app (hereinafter referred to as "Application") for mobile devices, which was developed by Liang's Wonderland (hereinafter referred to as "Service Provider") as a an Ad Supported service. This service is provided "AS IS".
 
 **What information does the Application obtain and how is it used?**  
 **User Provided Information**
